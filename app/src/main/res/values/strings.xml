@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TyroidDiagnosis</string>
+
+    <string name="hyperValue"> %1$s </string>
+    <string name="hypoValue"> %1$s </string>
+    <string name="normalValue"> %1$s </string>
+
+</resources>

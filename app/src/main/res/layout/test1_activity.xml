@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <com.stepstone.stepper.StepperLayout
+            android:id="@+id/stepperLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:isScrollContainer="true"
+            app:ms_activeStepColor="@color/mycolor"
+            app:ms_backButtonColor="#FFFFFF"
+            app:ms_backButtonText="Önceki"
+            app:ms_bottomNavigationBackground="@color/mycolor"
+            app:ms_completeButtonColor="#FFFFFF"
+            app:ms_completeButtonText="Tamamla"
+            app:ms_inactiveStepColor="#44000000"
+            app:ms_nextButtonColor="#FFFFFF"
+            app:ms_nextButtonText="Sonraki"
+            app:ms_showBottomNavigation="true"
+            app:ms_showErrorState="true"
+            app:ms_showErrorMessageEnabled="true"
+            app:ms_showErrorStateEnabled="true"
+            app:ms_stepperType="tabs"
+            app:ms_tabStepDividerWidth="50dp"
+            tools:theme="@style/StepperLayoutTheme" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="250dp"
+        android:padding="10dp"
+        android:layout_height="250dp"
+        android:background="@drawable/item_background">
+
+        <TextView
+            android:id="@+id/contentHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TST DEĞERİNİ GİRİNİZ "
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            />
+
+        <EditText
+            android:id="@+id/tst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contentHead"
+            android:layout_alignStart="@+id/contentHead"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_alignEnd="@+id/contentHead"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

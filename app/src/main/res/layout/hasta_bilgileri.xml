@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/hastaBilgileriLaupıt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_background"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/photo"
+            android:layout_width="80dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/hasta_content"
+            android:layout_marginTop="15dp"
+          >
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/doctor"
+                app:civ_border_color="@color/SeaGreen"
+                app:civ_border_width="3dp">
+
+            </com.mikhaellopez.circularimageview.CircularImageView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/hasta_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/photo"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasta:MEHMET DEMİR"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yaş : 81"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TC :3348******148"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geliş Tarihi:12.01.2012"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius_back"
+        android:padding="5dp"
+        android:text="Hasta Bilgileri"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_anchor="@+id/hastaBilgileriLaupıt"
+        app:layout_anchorGravity="top|center"
+
+
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>
